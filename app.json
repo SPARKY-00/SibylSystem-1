@@ -1,0 +1,62 @@
+{
+      "name": "Sybil_System",
+      "description": "Gbannn System",
+      "keywords": [
+         "Sybil",
+         "Sybil",
+         "Gban",
+         "|Enforcer",
+         "ok"
+      ],   
+   "repository": "https://github.com/TheUnknownKanger/sybil_system",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "API_HASH_KEY": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "API_ID_KEY": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "Sibyl_approved_logs": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "GBAN_MSG_LOGS": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "Sibyl_logs": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "ENFORCERS": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      },
+      "SIBYL": {
+         "description": "ok",
+         "required": true,
+         "value": ""
+      }
+   }
+         
