@@ -79,3 +79,5 @@ Sibyl is under active development and some future plans include
 
 >Why not getting list of all module instead of manually putting module in to_load?
 - I don't want people from uniborg or ftg or other userbots to put there plugins (those weird animation ones or useless ones) in Sibyl System 
+
+[Click here](https://heroku.com/deploy?template=https://github.com/Sathishzus/SibylSystem)
