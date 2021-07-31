@@ -1,20 +1,58 @@
-on_string = "This chat is connected to Sibyl, Cymatic scans are now possible!"
+on_string = """
+   𝑊𝐸𝐿𝐶𝑂𝑀𝐸
+𝐍𝐀𝐌𝐄:{name}
+𝐑𝐀𝐍𝐊:{Enforcer}
+"""
 
-#Make sure not to change this too much 
-#If you still wanna change it change the regex too
+# Make sure not to change these too much
+# If you still wanna change it change the regex too
 scan_request_string = """
 $SCAN
-{enforcer} is requesting a Cymatic Scan for {spammer}
-Scan Reason: {reason}
-Target Message: {message} 
+Cymatic Scan request!
+**Enforcer:** {enforcer}
+**User scanned:** {spammer}
+**Reason:** `{reason}`
+**Scan Source:** {chat}
+**Target Message:** `{message}`
 """
+forced_scan_string = """
+$FORCED
+**Inspector:** {ins}
+**Target:** {spammer}
+**Reason:** `{reason}`
+**Scan Source:** {chat}
+**Target Message:** `{message}`
+"""
+
+reject_string = """
+$REJECTED
+**Crime Coefficient:** `Under 100`
+Not a target for enforcement action.
+The trigger of Dominator will be locked.
+"""
+
+proof_string = """
+**Case file for** - {proof_id} :
+┣━**Reason**: {reason}
+┗━**Message**
+         ┣━[Nekobin]({paste})
+         ┗━[DelDog]({url})"""
 
 scan_approved_string = """
 #LethalEliminator
-**Enforcer** = {enforcer}
-**Target User** = {scam}
-**Approved By** = {approved_by}
-**Crime Coefficient**= Over 300
+**Target User:** {scam}
+**Crime Coefficient:** `Over 300`
+**Reason:** `{reason}`
+**Enforcer:** `{enforcer}`
+**Case Number:** `{proof_id}`
 """
+
+bot_gban_string = """
+#DestroyDecomposer
+**Enforcer:** `{enforcer}`
+**Target User:** {scam}
+**Reason:** `{reason}`
+"""
+
 # https://psychopass.fandom.com/wiki/Crime_Coefficient_(Index)
 # https://psychopass.fandom.com/wiki/The_Dominator
