@@ -51,7 +51,7 @@ async def get_user(event):
         else:
             replied_user = await event.client(
                 GetFullUserRequest(previous_message.sender_id)
-            )
+            )  
     else:
         user = event.pattern_match.group(1)
 
