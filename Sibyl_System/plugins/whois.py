@@ -15,7 +15,7 @@ async def whois(event):
     try:
         to_get = int(to_get)
     except Exception:
-        pass
+        pass 
     try:
         data = await System(GetFullUserRequest(to_get))
     except Exception:
