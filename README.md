@@ -1,3 +1,2 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SPARKY-00/SibylSystem
-git)
+Https://heroku.com/deploy?template=https://github.com/SPARKY-00/SibylSystem.git
 
